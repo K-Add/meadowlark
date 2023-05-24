@@ -1,5 +1,6 @@
 const express = require('express')
 const expressHandlebars = require('express-handlebars')
+const fortune = require('./lib/fortune')
 
 const app = express()
 
@@ -16,8 +17,13 @@ app.get('/', (req, res) => {
     res.send('home')
 })
 
-app.get('/about', (req, res) => {    
-    res.send('about')})
+app.get('/about', (req, res) => {  
+    res.render('about', {
+        fortune:
+            fortune.getFortune()
+    })
+    // res.send('about')
+})
 
 app.use((req, res) => {
     res.status(404)

@@ -1,0 +1,17 @@
+{
+  "apps": [
+    {
+      "name": "meadowlark",
+      "script": "meadowlark.js",
+      "watch": true,
+      "ignore_watch": [
+        "node_modules",
+        "logs",
+        ".vscode"
+      ],
+      "env": {
+        "NODE_ENV": "production"
+      }
+    }
+  ]
+}
