@@ -19,6 +19,8 @@
   },
   "devDependencies": {
     "eslint": "^8.41.0",
-    "jest": "24.9.0"
+    "jest": "24.9.0",
+    "portfinder": "1.0.20",
+    "puppeteer": "1.13.0"
   }
 }
